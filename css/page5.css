@@ -23,7 +23,19 @@ body {
 }
 
 .activity3a-label {
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+#th1 {
+    text-align: left;
+}
+
+#th2 {
+    text-align: left;
+}
+
+#tp {
+    color: #0074cc;
 }
 
 /* section */
@@ -52,16 +64,17 @@ body {
 
 .name-tag {
     position: relative;
-    left: -95px;
-    top: 90px;
+    left: 0px;
+    top: 2px;
     background-color: #00757d;
     color: white;
     padding: 4px 12px;
     border-radius: 6px;
     font-weight: bold;
     font-size: 1em;
-    display: inline-block;
-    z-index: 1;
+    /* display: inline-block; */
+    /* z-index: 1; */
+    width: fit-content;
 }
 
 /* Full image with no clip */
@@ -85,6 +98,7 @@ body {
 }
 
 .profile-img1 {
+    border-radius: 50%;
     float: right;
     shape-outside: circle(50%);
     clip-path: circle(50%);
@@ -119,6 +133,7 @@ body {
     border-radius: 6px;
     /* position: relative; */
     padding: 10px;
+
 }
 
 .grammar-box .grammar-title {
@@ -127,6 +142,9 @@ body {
     margin-bottom: 8px;
     padding: 10px;
     background-color: #1a7282;
+    width: 199px;
+    margin-left: -10px;
+    margin-top: -9px;
 }
 
 .grammar-box .grammar-text {
@@ -160,9 +178,13 @@ body {
     display: block;
     margin-top: 4px;
     color: #1a7282;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
+#st{
+    color: black;
+}
+
 
 #hr {
     border-top: 1px dashed #1a7282;
@@ -218,9 +240,47 @@ textarea {
 textarea::placeholder {
     color: #0074cc;
 }
+.profile-img {
+    float: left;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px 20px 10px 0;
+}
+
+.name-tag {
+    position: relative;
+    left: -95px;
+    top: 90px;
+    background-color: #00757d;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+    z-index: 1;
+}
+
+/* Full image with no clip */
+
+.right-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* image2 */
+
+/* Mobile fix */
+
+/* gramatica */
 
 /* Mobile fix */
 @media (max-width: 1024px) {
+
     /* image2 */
     .name-tag1 {
         position: relative;
@@ -235,7 +295,40 @@ textarea::placeholder {
         display: inline-block;
         z-index: 1;
     }
-    #garmmar-col{
-        display: contents; 
+
+    #garmmar-col {
+        display: contents;
+    }
+
+    .grammar-box {
+        margin-top: 10px;
+
+    }
+
+    .name-tag {
+        position: relative;
+        left: 5px;
+        top: 4px;
+        background-color: #00757d;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1em;
+        display: inline-block;
+    }
+
+    .name-tag1 {
+        position: relative;
+        right: -112px;
+        top: 100px;
+        background-color: #00757d;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1em;
+        display: inline-block;
+        z-index: 1;
     }
 }
