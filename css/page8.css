@@ -170,6 +170,7 @@ body {
     margin-bottom: 5px;
     border-bottom: 1px dotted white;
     display: inline-block;
+    margin-left: -44px;
 }
 
 .grammar-box .example b {

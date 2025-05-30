@@ -181,7 +181,8 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
-#st{
+
+#st {
     color: black;
 }
 
@@ -240,6 +241,7 @@ textarea {
 textarea::placeholder {
     color: #0074cc;
 }
+
 .profile-img {
     float: left;
     shape-outside: circle(50%);
@@ -264,6 +266,29 @@ textarea::placeholder {
     z-index: 1;
 }
 
+.name-tag,
+.name-tag1 {
+    background-color: #00757d;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Full image with no clip */
 
 .right-image {
@@ -282,7 +307,7 @@ textarea::placeholder {
 @media (max-width: 1024px) {
 
     /* image2 */
-    .name-tag1 {
+    /* .name-tag1 {
         position: relative;
         right: -170px;
         top: 90px;
@@ -294,7 +319,7 @@ textarea::placeholder {
         font-size: 1em;
         display: inline-block;
         z-index: 1;
-    }
+    } */
 
     #garmmar-col {
         display: contents;
@@ -302,13 +327,14 @@ textarea::placeholder {
 
     .grammar-box {
         margin-top: 10px;
+        margin-left: 13px;
 
     }
 
     .name-tag {
         position: relative;
-        left: 5px;
-        top: 4px;
+        left: -90px;
+        top: 95px;
         background-color: #00757d;
         color: white;
         padding: 4px 12px;
@@ -320,7 +346,40 @@ textarea::placeholder {
 
     .name-tag1 {
         position: relative;
-        right: -112px;
+        left: 373px;
+        top: 105px;
+        background-color: #00757d;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1em;
+        display: inline-block;
+        right: -297px;
+    }
+}
+
+@media (max-width: 320px) {
+    .name-tag1 {
+        position: relative;
+        left: 142px;
+        top: 105px;
+        background-color: #00757d;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1em;
+        display: inline-block;
+        right: -297px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .name-tag1 {
+        position: relative;
+        left: 294px;
         top: 100px;
         background-color: #00757d;
         color: white;
@@ -329,6 +388,15 @@ textarea::placeholder {
         font-weight: bold;
         font-size: 1em;
         display: inline-block;
-        z-index: 1;
+        right: -297px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .grammar-box {
+        margin: 10px auto;
+        width: 100%;
+        max-width: 300px;
     }
 }
